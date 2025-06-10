@@ -1,0 +1,1106 @@
+[2025-06-10 11:41:39] [DEBUG] com.pcwk.ehr.user.dao.Log4j2Main - 디버그 메시지
+[2025-06-10 11:41:39] [INFO ] com.pcwk.ehr.user.dao.Log4j2Main - 인포 메시지
+[2025-06-10 11:41:39] [WARN ] com.pcwk.ehr.user.dao.Log4j2Main - 경고 메시지
+[2025-06-10 11:41:39] [ERROR] com.pcwk.ehr.user.dao.Log4j2Main - 에러 메시지
+[2025-06-10 11:43:00] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@25d250c6, started on Tue Jun 10 11:43:00 GMT+09:00 2025
+[2025-06-10 11:43:00] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@27462a88
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@70ed52de
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3561c410
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4397ad89
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@59cba5a
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@455b6df1
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4ddbbdf8
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5dcb4f5f
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@71812481
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@7b94089b
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7ca20101
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:2
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@6155d082
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3a5ecce3
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@2ea6e30c
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6138e79a
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:3
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@388526fb
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7803bfd
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025-06-10]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@6e950bcf
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@16414e40
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=2025-06-10]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@525575
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@46dffdc3
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=2025-06-10]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@6d1ef78d, started on Tue Jun 10 11:43:01 GMT+09:00 2025
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@4982cc36
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4f1bfe23
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@e19bb76
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:3
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@71529963
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@61a88b8c
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5adb0db3
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3f270e0a
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@7241a47d
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@77258e59
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01_99, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 11:43:01] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:00:12] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-10 12:00:12] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6771beb3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@51399530, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6b2ea799, org.springframework.test.context.support.DirtiesContextTestExecutionListener@411f53a0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2b71e916, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36fc695d, org.springframework.test.context.event.EventPublishingTestExecutionListener@28701274]
+[2025-06-10 12:00:12] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@1cf56a1c, started on Tue Jun 10 12:00:12 GMT+09:00 2025
+[2025-06-10 12:00:12] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@c667f46
+[2025-06-10 12:00:12] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3eb81efb
+[2025-06-10 12:00:12] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@68be8808
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@604c5de8
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@37091312
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@576f63f6
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2dca0d64
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4b7e96a
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6475472c
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4bd1f8dd
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7096b474
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:2
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3c989952
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@784b990c
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@25bc0606
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@793138bd
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:3
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5c18016b
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@33aeca0b
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025-06-10]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@31aa3ca5
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@45905bff
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=2025-06-10]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@b6b1987
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6b44435b
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=2025-06-10]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@6da00fb9, started on Tue Jun 10 12:00:13 GMT+09:00 2025
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@3fa2213
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@6f0b0a5e
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6035b93b
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:3
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3dd1dc90
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@abf688e
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@1a7288a3
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2974f221
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@686449f9
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@68b6f0d6
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01_99, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 12:00:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:00:56] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-10 12:00:56] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36fc695d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@28701274, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@13c9d689, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3754a4bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62379589, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4afcd809, org.springframework.test.context.event.EventPublishingTestExecutionListener@175c2241]
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@24313fcc, started on Tue Jun 10 12:00:56 GMT+09:00 2025
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@64ec96c6
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5cdec700
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ebaa6cb
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@2a640157
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@52851b44
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5ef6ae06
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:00:56] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@55dfebeb
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e14c16d
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3c989952
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3d3ba765
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@25bc0606
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:2
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@793138bd
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1951b871
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@33aeca0b
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@57ac5227
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:3
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@e98770d
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1ae67cad
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025-06-10]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@2ccca26f
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@66b7550d
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=2025-06-10]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@7c541c15
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3542162a
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=2025-06-10]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@24313fcc, started on Tue Jun 10 12:00:56 GMT+09:00 2025
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@64ec96c6
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@75b25825
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@18025ced
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:3
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3a3e4aff
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5d2a4eed
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3f0846c6
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@77a98a6a
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e10dc6
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@45e37a7e
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01_99, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 12:00:57] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:01:48] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-10 12:01:48] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36fc695d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@28701274, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@13c9d689, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3754a4bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62379589, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4afcd809, org.springframework.test.context.event.EventPublishingTestExecutionListener@175c2241]
+[2025-06-10 12:01:48] [ERROR] org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@13c9d689] to prepare test instance [com.pcwk.ehr.user.UserDaoTest@2cdd0d4b]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.3.37.jar:5.3.37]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.37.jar:5.3.37]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.37.jar:5.3.37]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.37.jar:5.3.37]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [applicationContext99.xml]; nested exception is java.io.FileNotFoundException: class path resource [applicationContext99.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:266) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:276) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:244) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.37.jar:5.3.37]
+	... 26 more
+Caused by: java.io.FileNotFoundException: class path resource [applicationContext99.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:203) ~[spring-core-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:266) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:276) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:244) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.37.jar:5.3.37]
+	... 26 more
+[2025-06-10 12:01:48] [ERROR] org.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@13c9d689] to prepare test instance [com.pcwk.ehr.user.UserDaoTest@4da4253]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.3.37.jar:5.3.37]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.3.37.jar:5.3.37]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.3.37.jar:5.3.37]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) [junit-4.13.2.jar:4.13.2]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) [junit-4.13.2.jar:4.13.2]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.3.37.jar:5.3.37]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464) [.cp/:?]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210) [.cp/:?]
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [applicationContext99.xml]; nested exception is java.io.FileNotFoundException: class path resource [applicationContext99.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:266) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:276) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:244) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.37.jar:5.3.37]
+	... 26 more
+Caused by: java.io.FileNotFoundException: class path resource [applicationContext99.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:203) ~[spring-core-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:196) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:232) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:203) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:265) ~[spring-beans-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadBeanDefinitions(AbstractGenericContextLoader.java:266) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:122) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:276) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:244) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.37.jar:5.3.37]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.37.jar:5.3.37]
+	... 26 more
+[2025-06-10 12:04:45] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-10 12:04:45] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36fc695d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@28701274, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@13c9d689, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3754a4bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62379589, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4afcd809, org.springframework.test.context.event.EventPublishingTestExecutionListener@175c2241]
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@24313fcc, started on Tue Jun 10 12:04:45 GMT+09:00 2025
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@64ec96c6
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5cdec700
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ebaa6cb
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@2a640157
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@52851b44
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5ef6ae06
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@55dfebeb
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e14c16d
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3c989952
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3d3ba765
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@25bc0606
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:2
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@793138bd
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1951b871
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@33aeca0b
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@57ac5227
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:3
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@e98770d
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1ae67cad
+[2025-06-10 12:04:45] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025-06-10]
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@2ccca26f
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@66b7550d
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=2025-06-10]
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@7c541c15
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3542162a
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=2025-06-10]
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@24313fcc, started on Tue Jun 10 12:04:45 GMT+09:00 2025
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@64ec96c6
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@75b25825
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@18025ced
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:3
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3a3e4aff
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5d2a4eed
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3f0846c6
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@77a98a6a
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e10dc6
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7e22550a
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01_99, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 12:04:46] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 14:28:58] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-10 14:28:58] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36fc695d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@28701274, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@13c9d689, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3754a4bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62379589, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4afcd809, org.springframework.test.context.event.EventPublishingTestExecutionListener@175c2241]
+[2025-06-10 14:28:58] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@24313fcc, started on Tue Jun 10 14:28:58 GMT+09:00 2025
+[2025-06-10 14:28:58] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@64ec96c6
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5cdec700
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ebaa6cb
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@2a640157
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@52851b44
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5ef6ae06
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@55dfebeb
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e14c16d
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3c989952
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3d3ba765
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5d1659ea
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:2
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@1951b871
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5c18016b
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@43aaf813
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@57ac5227
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:3
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@e98770d
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1ae67cad
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025-06-10]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@2ccca26f
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@66b7550d
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=2025-06-10]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@7c541c15
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3542162a
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=2025-06-10]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@24313fcc, started on Tue Jun 10 14:28:58 GMT+09:00 2025
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@64ec96c6
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@75b25825
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@18025ced
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:3
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3a3e4aff
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5d2a4eed
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3f0846c6
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@77a98a6a
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e10dc6
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@45e37a7e
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01_99, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 14:28:59] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 14:45:30] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-10 14:45:30] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@36fc695d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@28701274, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@13c9d689, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3754a4bf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@62379589, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4afcd809, org.springframework.test.context.event.EventPublishingTestExecutionListener@175c2241]
+[2025-06-10 14:45:30] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@24313fcc, started on Tue Jun 10 14:45:30 GMT+09:00 2025
+[2025-06-10 14:45:30] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@64ec96c6
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5cdec700
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@ebaa6cb
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@2a640157
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@52851b44
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5ef6ae06
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@55dfebeb
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e14c16d
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3c989952
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3d3ba765
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@25bc0606
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:2
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@793138bd
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1951b871
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@33aeca0b
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@43aaf813
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:3
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4ba302e0
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@e98770d
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025-06-10]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@6b44435b
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@66b7550d
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=2025-06-10]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@7c541c15
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3542162a
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=2025-06-10]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@24313fcc, started on Tue Jun 10 14:45:30 GMT+09:00 2025
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@64ec96c6
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@75b25825
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@18025ced
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:3
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3a3e4aff
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5d2a4eed
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3f0846c6
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@77a98a6a
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e10dc6
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@45e37a7e
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01_99, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 14:45:31] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 15:15:04] [DEBUG] com.pcwk.ehr.user.dao.Log4j2Main - 디버그 메시지
+[2025-06-10 15:15:04] [INFO ] com.pcwk.ehr.user.dao.Log4j2Main - 인포 메시지
+[2025-06-10 15:15:04] [WARN ] com.pcwk.ehr.user.dao.Log4j2Main - 경고 메시지
+[2025-06-10 15:15:04] [ERROR] com.pcwk.ehr.user.dao.Log4j2Main - 에러 메시지

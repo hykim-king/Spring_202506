@@ -1,0 +1,386 @@
+[2025-06-10 11:08:00] [DEBUG] com.pcwk.ehr.user.dao.Log4j2Main - 디버그 메시지
+[2025-06-10 11:08:00] [INFO ] com.pcwk.ehr.user.dao.Log4j2Main - 인포 메시지
+[2025-06-10 11:08:00] [WARN ] com.pcwk.ehr.user.dao.Log4j2Main - 경고 메시지
+[2025-06-10 11:08:00] [ERROR] com.pcwk.ehr.user.dao.Log4j2Main - 에러 메시지
+[2025-06-10 11:08:47] [INFO ] com.pcwk.ehr.user.dao.Log4j2Main - 인포 메시지
+[2025-06-10 11:08:47] [WARN ] com.pcwk.ehr.user.dao.Log4j2Main - 경고 메시지
+[2025-06-10 11:08:47] [ERROR] com.pcwk.ehr.user.dao.Log4j2Main - 에러 메시지
+[2025-06-10 11:17:23] [INFO ] com.pcwk.ehr.user.dao.Log4j2Main - 인포 메시지
+[2025-06-10 11:17:23] [WARN ] com.pcwk.ehr.user.dao.Log4j2Main - 경고 메시지
+[2025-06-10 11:17:23] [ERROR] com.pcwk.ehr.user.dao.Log4j2Main - 에러 메시지
+[2025-06-10 11:21:10] [DEBUG] com.pcwk.ehr.user.dao.Log4j2Main - 디버그 메시지
+[2025-06-10 11:21:10] [INFO ] com.pcwk.ehr.user.dao.Log4j2Main - 인포 메시지
+[2025-06-10 11:21:10] [WARN ] com.pcwk.ehr.user.dao.Log4j2Main - 경고 메시지
+[2025-06-10 11:21:10] [ERROR] com.pcwk.ehr.user.dao.Log4j2Main - 에러 메시지
+[2025-06-10 11:23:03] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@4df50bcc, started on Tue Jun 10 11:23:03 GMT+09:00 2025
+[2025-06-10 11:23:03] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@49049a04
+[2025-06-10 11:23:03] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:23:03] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 11:23:03] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:27:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@4df50bcc, started on Tue Jun 10 11:27:13 GMT+09:00 2025
+[2025-06-10 11:27:13] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@49049a04
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@24569dba
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7ceb3185
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3d246ea3
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@341814d3
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@5454d35e
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@20c0a64d
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@1f3f02ee
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1fde5d22
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01_99, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 11:27:14] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@4445629, started on Tue Jun 10 11:33:36 GMT+09:00 2025
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@290222c1
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e08ff24
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3081f72c
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@20f5281c
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@56c4278e
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@119cbf96
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@71329995
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@6c0d9d86
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4ce1d6d0
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@1f3f02ee
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1fde5d22
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:2
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@71812481
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@16ce702d
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@7ca20101
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6155d082
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:3
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@561868a0
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2ea6e30c
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025-06-10]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4b1d6571
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1b835480
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=2025-06-10]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4f25b795
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6fb365ed
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=2025-06-10]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@53dbe163, started on Tue Jun 10 11:33:36 GMT+09:00 2025
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@22d7b4f8
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@38831718
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2c1156a7
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:3
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4982cc36
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@691939c9
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@e19bb76
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@512535ff
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@61a88b8c
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5adb0db3
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01_99, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 11:33:36] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@4445629, started on Tue Jun 10 12:05:03 GMT+09:00 2025
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@290222c1
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@3e08ff24
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@3081f72c
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@20f5281c
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@56c4278e
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@119cbf96
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@71329995
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@6c0d9d86
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@4ce1d6d0
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@1f3f02ee
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1fde5d22
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:2
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@71812481
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@7b94089b
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@47f9738
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6155d082
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:3
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@561868a0
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2ea6e30c
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025-06-10]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4b1d6571
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@1b835480
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=사용안함]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321a, regDt=2025-06-10]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4f25b795
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@6fb365ed
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=사용안함]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.1 outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321a, regDt=2025-06-10]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - context:org.springframework.context.support.GenericXmlApplicationContext@53dbe163, started on Tue Jun 10 12:05:04 GMT+09:00 2025
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - dao:com.pcwk.ehr.user.dao.UserDao@22d7b4f8
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@38831718
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ delete from member  
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@2c1156a7
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:3
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@4982cc36
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ INSERT INTO member (  
+     user_id,          
+     name,             
+     password,         
+     reg_dt            
+ ) VALUES ( ?,         
+            ?,         
+            ?,         
+            SYSDATE )  
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@691939c9
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.flag:1
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@e19bb76
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+select count(*) total_cnt from member 
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@512535ff
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 4.count:1
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 1.conn:oracle.jdbc.driver.T4CConnection@61a88b8c
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 2.sql:
+ SELECT                
+     user_id,          
+     name,             
+     password,         
+     TO_CHAR(reg_dt,'YYYY-MM-DD') AS  reg_dt_str          
+ FROM                  
+     member            
+ WHERE  user_id = ?    
+
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.pstmt:oracle.jdbc.driver.OraclePreparedStatementWrapper@5adb0db3
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.dao.UserDao - 3.1 param:UserDTO [userId=pcwk01_99, name=이상무01, password=4321, regDt=사용안함]
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - @After
+[2025-06-10 12:05:04] [DEBUG] com.pcwk.ehr.user.UserDaoTest - ***************************
