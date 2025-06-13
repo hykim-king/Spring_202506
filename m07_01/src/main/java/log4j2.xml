@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- 콘솔 로그 -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{HH:mm:ss}] [%-5level] %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- 롤링 파일 로그 -->
+        <RollingFile name="RollingFile"
+                     fileName="logs/app-log.log"
+                     filePattern="logs/archive/app-log-%d{yyyy-MM-dd}-%i.log.gz">
+
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%-5level] %logger{36} - %msg%n"/>
+
+            <Policies>
+                <!-- 시간 기준: 매일 롤링 -->
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <!-- 용량 기준: 10MB 이상이면 롤링 -->
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+
+            <!-- 백업 보관 최대 개수 -->
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- log level -->
+        <Logger name="com.pcwk" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="userService"
+		class="com.pcwk.ehr.user.service.UserService">
+		<property name="userDao" ref="userDao" />
+	</bean>
+
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass"
+			value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url"
+			value="jdbc:oracle:thin:@192.168.100.30:1522:XE" />
+		<property name="username" value="scott" />
+		<property name="password" value="pcwk" />
+	</bean>
+
+	<bean id="userDao" class="com.pcwk.ehr.user.dao.UserDaoImpl">
+		<!-- setter injection -->
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+</beans>
