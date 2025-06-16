@@ -1,0 +1,2509 @@
+[2025-06-16 09:14:42] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 09:14:42] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52f27fbd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4c163e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a8355dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0d9fe7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c430e6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@312aa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@536f2a7e]
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ ORDER BY user_id                                            
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025/06/16 09:14:42, login=49, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 09:14:42, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321, regDt=2025/06/16 09:14:42, login=60, recommend=29, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk04, name=이상무04, password=4321, regDt=2025/06/16 09:14:42, login=61, recommend=30, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk05, name=이상무05, password=4321, regDt=2025/06/16 09:14:42, login=90, recommend=37, grade=GOLD, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ UPDATE member              
+ SET  name      = ?,        
+      password  = ?,        
+      login     = ?,        
+      recommend = ?,        
+      grade     = ?,        
+      email     = ?,        
+      reg_dt    = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - │ TestUserServiceException()                              │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:14:42] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 09:14:42, login=50, recommend=0, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@475c9c31, started on Mon Jun 16 09:14:42 GMT+09:00 2025
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@c41709a
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@7db0565c
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 09:14:43] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:15:05] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 09:15:05] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52f27fbd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4c163e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a8355dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0d9fe7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c430e6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@312aa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@536f2a7e]
+[2025-06-16 09:15:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:15:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 09:15:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:15:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 09:15:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 09:15:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 09:15:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ ORDER BY user_id                                            
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025/06/16 09:15:06, login=49, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 09:15:06, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321, regDt=2025/06/16 09:15:06, login=60, recommend=29, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk04, name=이상무04, password=4321, regDt=2025/06/16 09:15:06, login=61, recommend=30, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk05, name=이상무05, password=4321, regDt=2025/06/16 09:15:06, login=90, recommend=37, grade=GOLD, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ UPDATE member              
+ SET  name      = ?,        
+      password  = ?,        
+      login     = ?,        
+      recommend = ?,        
+      grade     = ?,        
+      email     = ?,        
+      reg_dt    = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - │ TestUserServiceException()                              │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 09:15:06, login=50, recommend=0, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@475c9c31, started on Mon Jun 16 09:15:05 GMT+09:00 2025
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@133e019b
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@41382722
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 09:15:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:39:38] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 09:39:38] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52f27fbd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4c163e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a8355dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0d9fe7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c430e6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@312aa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@536f2a7e]
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@475c9c31, started on Mon Jun 16 09:39:39 GMT+09:00 2025
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@56f0cc85
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@62e20a76
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@2cc44ad
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 09:39:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:44:05] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 09:44:05] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52f27fbd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4c163e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a8355dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0d9fe7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c430e6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@312aa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@536f2a7e]
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 09:44:05] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ ORDER BY user_id                                            
+
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025/06/16 09:44:05, login=49, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 09:44:05, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321, regDt=2025/06/16 09:44:05, login=60, recommend=29, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk04, name=이상무04, password=4321, regDt=2025/06/16 09:44:05, login=61, recommend=30, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk05, name=이상무05, password=4321, regDt=2025/06/16 09:44:05, login=90, recommend=37, grade=GOLD, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ UPDATE member              
+ SET  name      = ?,        
+      password  = ?,        
+      login     = ?,        
+      recommend = ?,        
+      grade     = ?,        
+      email     = ?,        
+      reg_dt    = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - │ TestUserServiceException()                              │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.service.TestUserService - *Exception conn.rollback():예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 09:44:05, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@475c9c31, started on Mon Jun 16 09:44:05 GMT+09:00 2025
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@344561e0
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@66d23e4a
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@7a0e1b5e
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 09:44:06] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:46:21] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 09:46:21] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52f27fbd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4c163e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a8355dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0d9fe7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c430e6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@312aa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@536f2a7e]
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ ORDER BY user_id                                            
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025/06/16 09:46:22, login=49, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 09:46:22, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321, regDt=2025/06/16 09:46:22, login=60, recommend=29, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk04, name=이상무04, password=4321, regDt=2025/06/16 09:46:22, login=61, recommend=30, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk05, name=이상무05, password=4321, regDt=2025/06/16 09:46:22, login=90, recommend=37, grade=GOLD, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ UPDATE member              
+ SET  name      = ?,        
+      password  = ?,        
+      login     = ?,        
+      recommend = ?,        
+      grade     = ?,        
+      email     = ?,        
+      reg_dt    = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - │ TestUserServiceException()                              │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.service.TestUserService - *Exception conn.rollback():예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 09:46:22, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@475c9c31, started on Mon Jun 16 09:46:22 GMT+09:00 2025
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@213e3629
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@4e9658b5
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@7a0e1b5e
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 09:46:22] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:29:10] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 10:29:10] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52f27fbd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4c163e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a8355dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0d9fe7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c430e6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@312aa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@536f2a7e]
+[2025-06-16 10:29:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:29:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 10:29:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:29:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 10:29:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 10:29:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 10:29:10] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ ORDER BY user_id                                            
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025/06/16 10:29:11, login=49, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 10:29:11, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321, regDt=2025/06/16 10:29:11, login=60, recommend=29, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk04, name=이상무04, password=4321, regDt=2025/06/16 10:29:11, login=61, recommend=30, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk05, name=이상무05, password=4321, regDt=2025/06/16 10:29:11, login=90, recommend=37, grade=GOLD, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ UPDATE member              
+ SET  name      = ?,        
+      password  = ?,        
+      login     = ?,        
+      recommend = ?,        
+      grade     = ?,        
+      email     = ?,        
+      reg_dt    = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - │ TestUserServiceException()                              │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.service.TestUserService - *Exception conn.rollback():예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 10:29:11, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@475c9c31, started on Mon Jun 16 10:29:10 GMT+09:00 2025
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@27f9e982
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@4593ff34
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@73393584
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 10:29:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:30:10] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 10:30:10] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52f27fbd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4c163e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a8355dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0d9fe7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c430e6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@312aa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@536f2a7e]
+[2025-06-16 10:30:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:30:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 10:30:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:30:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 10:30:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 10:30:10] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 10:30:10] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 10:30:10] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ ORDER BY user_id                                            
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025/06/16 10:30:11, login=49, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 10:30:11, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321, regDt=2025/06/16 10:30:11, login=60, recommend=29, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk04, name=이상무04, password=4321, regDt=2025/06/16 10:30:11, login=61, recommend=30, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk05, name=이상무05, password=4321, regDt=2025/06/16 10:30:11, login=90, recommend=37, grade=GOLD, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ UPDATE member              
+ SET  name      = ?,        
+      password  = ?,        
+      login     = ?,        
+      recommend = ?,        
+      grade     = ?,        
+      email     = ?,        
+      reg_dt    = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - │ TestUserServiceException()                              │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.service.TestUserService - *Exception conn.rollback():예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 10:30:11, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@475c9c31, started on Mon Jun 16 10:30:10 GMT+09:00 2025
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@27f9e982
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@4593ff34
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@73393584
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 10:30:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:44:34] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 10:44:34] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52f27fbd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4c163e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a8355dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0d9fe7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c430e6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@312aa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@536f2a7e]
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │null
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 10:44:35, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@475c9c31, started on Mon Jun 16 10:44:35 GMT+09:00 2025
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@41382722
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@7dac3fd8
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@425357dd
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 10:44:35] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:49:54] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 10:49:54] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@52f27fbd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4c163e3, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4a8355dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4d0d9fe7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c430e6c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@312aa7c, org.springframework.test.context.event.EventPublishingTestExecutionListener@536f2a7e]
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │null
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 10:49:54, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@475c9c31, started on Mon Jun 16 10:49:54 GMT+09:00 2025
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@77b21474
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@52d10fb8
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@41c07648
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 10:49:54] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:08:30] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 11:08:30] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@c430e6c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@312aa7c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@536f2a7e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@72bc6553, org.springframework.test.context.transaction.TransactionalTestExecutionListener@66982506, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@70cf32e3, org.springframework.test.context.event.EventPublishingTestExecutionListener@5a59ca5e]
+[2025-06-16 11:08:30] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:08:30] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 11:08:30] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:08:30] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 11:08:30] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │null
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 11:08:31, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@71687585, started on Mon Jun 16 11:08:30 GMT+09:00 2025
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@52d10fb8
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@41c07648
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@1fe8d51b
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - transactionManager:org.springframework.jdbc.datasource.DataSourceTransactionManager@781e7326
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 11:08:31] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:10:11] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 11:10:11] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@c430e6c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@312aa7c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@536f2a7e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@72bc6553, org.springframework.test.context.transaction.TransactionalTestExecutionListener@66982506, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@70cf32e3, org.springframework.test.context.event.EventPublishingTestExecutionListener@5a59ca5e]
+[2025-06-16 11:10:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:10:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 11:10:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:10:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 11:10:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 11:10:11] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 11:10:11] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ ORDER BY user_id                                            
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025/06/16 11:10:12, login=49, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 11:10:12, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321, regDt=2025/06/16 11:10:12, login=60, recommend=29, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk04, name=이상무04, password=4321, regDt=2025/06/16 11:10:12, login=61, recommend=30, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk05, name=이상무05, password=4321, regDt=2025/06/16 11:10:12, login=90, recommend=37, grade=GOLD, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ UPDATE member              
+ SET  name      = ?,        
+      password  = ?,        
+      login     = ?,        
+      recommend = ?,        
+      grade     = ?,        
+      email     = ?,        
+      reg_dt    = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - │ TestUserServiceException()                              │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.service.TestUserService - *Exception conn.rollback():예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 11:10:12, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@71687585, started on Mon Jun 16 11:10:11 GMT+09:00 2025
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@29caf222
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@46cf05f7
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@200606de
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - transactionManager:org.springframework.jdbc.datasource.DataSourceTransactionManager@5851bd4f
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 11:10:12] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:21:39] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-16 11:21:39] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@c430e6c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@312aa7c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@536f2a7e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@72bc6553, org.springframework.test.context.transaction.TransactionalTestExecutionListener@66982506, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@70cf32e3, org.springframework.test.context.event.EventPublishingTestExecutionListener@5a59ca5e]
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ *upgradeAllOrNothing()*   │
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ DELETE FROM member  
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:0
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk01
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무01
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 49
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk03
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무03
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 60
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 29
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk04
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무04
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 61
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 30
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ INSERT INTO member (   
+     user_id,           
+     name,              
+     password,          
+     login,             
+     recommend,         
+     grade,             
+     email,             
+     reg_dt             
+ ) VALUES ( ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            ?,          
+            SYSDATE )   
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk05
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무05
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 90
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 37
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 3
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+SELECT COUNT(*) total_cnt FROM member 
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.count:5
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ ORDER BY user_id                                            
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk01, name=이상무01, password=4321, regDt=2025/06/16 11:21:39, login=49, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 11:21:39, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk03, name=이상무03, password=4321, regDt=2025/06/16 11:21:39, login=60, recommend=29, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk04, name=이상무04, password=4321, regDt=2025/06/16 11:21:39, login=61, recommend=30, grade=SILVER, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk05, name=이상무05, password=4321, regDt=2025/06/16 11:21:39, login=90, recommend=37, grade=GOLD, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.sql:
+ UPDATE member              
+ SET  name      = ?,        
+      password  = ?,        
+      login     = ?,        
+      recommend = ?,        
+      grade     = ?,        
+      email     = ?,        
+      reg_dt    = SYSDATE   
+ WHERE                      
+         user_id = ?        
+
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - param:
+[2025-06-16 11:21:39] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 이상무02
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 4321
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 50
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 0
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - jamesol@paran.com
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - flag:1
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - │ TestUserServiceException()                              │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.service.TestUserServiceException - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.service.TestUserService - *Exception conn.rollback():예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.service.TestUserService - ***************************
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌───────────────────────────┐
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ Exception                 │예외가 발생 했습니다.
+ 사용자 아이디:pcwk04
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └───────────────────────────┘
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 1.sql:
+ SELECT                                                      
+     user_id,                                                
+     name,                                                   
+     password,                                               
+     login,                                                  
+     recommend,                                              
+     grade,                                                  
+     email,                                                  
+     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt_str   
+ FROM                                                        
+     member                                                  
+ WHERE user_id = ?                                           
+
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - 2.param: 
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - pcwk02
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.dao.UserDaoImpl - outVO:UserDTO [userId=pcwk02, name=이상무02, password=4321, regDt=2025/06/16 11:21:39, login=50, recommend=0, grade=BASIC, email=jamesol@paran.com, toString()=DTO [no=0, totalCnt=0]]
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ setUp()                                                 │
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - context:org.springframework.context.support.GenericApplicationContext@71687585, started on Mon Jun 16 11:21:39 GMT+09:00 2025
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userService:com.pcwk.ehr.user.service.UserService@29caf222
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - userDao:com.pcwk.ehr.user.dao.UserDaoImpl@46cf05f7
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - dataSource:org.springframework.jdbc.datasource.SimpleDriverDataSource@200606de
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - transactionManager:org.springframework.jdbc.datasource.DataSourceTransactionManager@5851bd4f
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - │ tearDown()                                              │
+[2025-06-16 11:21:40] [DEBUG] com.pcwk.ehr.user.UserServiceTest - └─────────────────────────────────────────────────────────┘

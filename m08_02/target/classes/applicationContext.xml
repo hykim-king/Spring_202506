@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="dummyMailService" class="com.pcwk.ehr.user.service.DummyMailService"></bean>
+	
+    <!-- Naver smtp -->
+    <bean id="mailSenderImpl" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.naver.com"/>
+        <property name="port" value="465"/>
+        <property name="username" value="jamesol@naver.com"/>
+        <property name="password" value="비밀번호"/>
+        <property name="defaultEncoding" value="utf-8"/>
+        <!-- SSL -->
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.smtp.host">smtp.naver.com</prop>
+                <prop key="mail.smtp.port">465</prop>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.ssl.protocols">TLSv1.2</prop>
+                <prop key="mail.smtp.ssl.enable">true</prop>
+                <prop key="mail.smtp.ssl.trust">smtp.naver.com</prop>
+                <prop key="mail.debug">true</prop>
+            </props>
+        </property>
+        
+    </bean>
+    
+	<bean id="userService"
+		class="com.pcwk.ehr.user.service.UserServiceImpl">
+		<property name="userDao" ref="userDao" />
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="transactionManager" ref="dataSourceTransactionManager"></property>
+		<property name="mailSender" ref="dummyMailService"></property>
+	</bean>
+    
+    <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass"
+			value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url"
+			value="jdbc:oracle:thin:@192.168.100.30:1522:XE" />
+		<property name="username" value="scott" />
+		<property name="password" value="pcwk" />
+	</bean>
+
+	<bean id="userDao" class="com.pcwk.ehr.user.dao.UserDaoImpl">
+		<!-- setter injection -->
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+</beans>
