@@ -1,0 +1,223 @@
+[2025-06-17 09:48:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-17 09:48:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ setUp()                                                 │
+[2025-06-17 09:48:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └─────────────────────────────────────────────────────────┘
+[2025-06-17 09:48:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 09:48:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *simpleProxy()*           │
+[2025-06-17 09:48:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 09:48:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌─────────────────────────────────────────────────────────┐
+[2025-06-17 09:48:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ tearDown()                                              │
+[2025-06-17 09:48:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └─────────────────────────────────────────────────────────┘
+[2025-06-17 10:02:58] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:02:58] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *simpleProxy()*           │
+[2025-06-17 10:02:58] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:02:58] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hello Pcwk
+[2025-06-17 10:03:48] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:03:48] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *simpleProxy()*           │
+[2025-06-17 10:03:48] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:03:48] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hello Pcwk
+[2025-06-17 10:03:48] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hi Pcwk
+[2025-06-17 10:03:48] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Thank You Pcwk
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *upperProxy()*            │
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HELLO PCWK
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *simpleProxy()*           │
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hello Pcwk
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hi Pcwk
+[2025-06-17 10:06:54] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Thank You Pcwk
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *upperProxy()*            │
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HELLO PCWK
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *simpleProxy()*           │
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hello Pcwk
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hi Pcwk
+[2025-06-17 10:07:39] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Thank You Pcwk
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *upperProxy()*            │
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HELLO PCWK
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HI PCWK
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - THANK YOU PCWK
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *simpleProxy()*           │
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hello Pcwk
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hi Pcwk
+[2025-06-17 10:08:43] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Thank You Pcwk
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *upperProxy()*            │
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HELLO PCWK
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HI PCWK
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - THANK YOU PCWK
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *simpleProxy()*           │
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hello Pcwk
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Hi Pcwk
+[2025-06-17 10:09:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Thank You Pcwk
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *dynamicProxy()*          │
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHello
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@3d6f0054
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hello Pcwk
+[2025-06-17 10:38:00] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HELLO PCWK
+[2025-06-17 10:40:06] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 10:40:06] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *dynamicProxy()*          │
+[2025-06-17 10:40:06] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 10:40:13] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 10:40:13] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 10:40:13] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 10:41:06] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHello
+[2025-06-17 10:41:06] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@77a98a6a
+[2025-06-17 10:41:12] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hello Pcwk
+[2025-06-17 10:41:12] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HELLO PCWK
+[2025-06-17 10:41:16] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 10:41:16] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 10:41:16] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 10:41:21] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHi
+[2025-06-17 10:41:21] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@78fbff54
+[2025-06-17 10:41:21] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hi Pcwk
+[2025-06-17 10:41:21] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HI PCWK
+[2025-06-17 10:41:21] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 10:41:21] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 10:41:21] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 10:41:22] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayThankYou
+[2025-06-17 10:41:22] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@3e10dc6
+[2025-06-17 10:41:22] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Thank You Pcwk
+[2025-06-17 10:41:22] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - THANK YOU PCWK
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *dynamicProxy()*          │
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHello
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@3d6f0054
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hello Pcwk
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HELLO PCWK
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHi
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@505fc5a4
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hi Pcwk
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HI PCWK
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayThankYou
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@5fbdfdcf
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Thank You Pcwk
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Thank You Pcwk
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHello
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@4efc180e
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hello Pcwk
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHi
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@53fdffa1
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hi Pcwk
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayThankYou
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@5562c41e
+[2025-06-17 11:11:24] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Thank You Pcwk
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *dynamicProxy()*          │
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHello
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@3d6f0054
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hello Pcwk
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HELLO PCWK
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHi
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@505fc5a4
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hi Pcwk
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HI PCWK
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayThankYou
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@5fbdfdcf
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Thank You Pcwk
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Thank You Pcwk
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHello
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@4efc180e
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hello Pcwk
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHi
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@53fdffa1
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hi Pcwk
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayThankYou
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@5562c41e
+[2025-06-17 11:11:53] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Thank You Pcwk
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - ┌───────────────────────────┐
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - │ *dynamicProxy()*          │
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - └───────────────────────────┘
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHello
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@3d6f0054
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hello Pcwk
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HELLO PCWK
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHi
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@505fc5a4
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hi Pcwk
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - HI PCWK
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayThankYou
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@5fbdfdcf
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Thank You Pcwk
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.ProxyTest - Thank You Pcwk
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHello
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@4efc180e
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hello Pcwk
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayHi
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@53fdffa1
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Hi Pcwk
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ┌───────────────────────────┐
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - │ *invoke()*                │
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - └───────────────────────────┘
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - method:sayThankYou
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - args:[Ljava.lang.Object;@5562c41e
+[2025-06-17 11:14:20] [DEBUG] com.pcwk.ehr.proxy.UppercaseHandler - ret:Thank You Pcwk

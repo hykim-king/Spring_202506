@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+    <!-- Advice :성능 측정  -->    
+    <bean id="performanceAdvice" class="com.pcwk.ehr.cmn.apect.PerformanceAdvice"></bean>
+
+    <!-- AOP -->
+    <aop:config>
+        <aop:aspect ref="performanceAdvice">
+            <aop:pointcut expression="execution(* com.pcwk.ehr..service.*Impl.none*(..) )" id="performancePointcut"/>
+            <aop:around method="logExecutionTime" pointcut-ref="performancePointcut"/>
+        </aop:aspect>    
+    </aop:config>
+
+
+
+	<bean id="dummyMailService"
+		class="com.pcwk.ehr.user.service.DummyMailService"></bean>
+
+	<!-- Naver smtp -->
+
+	<!-- google smtp -->
+	<bean id="mailSenderImpl"
+		class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com" />
+		<property name="port" value="587" />
+		<property name="username" value="hykim22@gmail.com" />
+		<property name="password" value="jmph vbbg mmyn wdmo" />
+		<property name="protocol" value="smtp" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.ssl.protocols">TLSv1.2</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="userService"
+		class="com.pcwk.ehr.user.service.UserServiceImpl">
+		<property name="userDao" ref="userDao" />
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="transactionManager"
+			ref="dataSourceTransactionManager"></property>
+		<property name="mailSender" ref="mailSenderImpl"></property>
+	</bean>
+
+	<bean id="dataSourceTransactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+		<property name="driverClass"
+			value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url"
+			value="jdbc:oracle:thin:@192.168.100.30:1522:XE" />
+		<property name="username" value="scott" />
+		<property name="password" value="pcwk" />
+	</bean>
+
+	<bean id="userDao" class="com.pcwk.ehr.user.dao.UserDaoImpl">
+		<!-- setter injection -->
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+</beans>
