@@ -1,0 +1,78 @@
+[2025-06-24 16:04:53] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-24 16:04:53] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6304101a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5170bcf4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2812b107, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@df6620a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e31276e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1a72a540, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@27d5a580, org.springframework.test.context.event.EventPublishingTestExecutionListener@198d6542]
+[2025-06-24 16:04:54] [DEBUG] com.pcwk.ehr.cmn.PLog - ┌─────────────────────────────────────────────────────────┐
+[2025-06-24 16:04:54] [DEBUG] com.pcwk.ehr.cmn.PLog - │ UserController()                                        │
+[2025-06-24 16:04:54] [DEBUG] com.pcwk.ehr.cmn.PLog - └─────────────────────────────────────────────────────────┘
+[2025-06-24 16:04:54] [DEBUG] com.pcwk.ehr.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@6f19ac19, started on Tue Jun 24 16:04:53 GMT+09:00 2025
+[2025-06-24 16:04:54] [DEBUG] com.pcwk.ehr.cmn.PLog - 1.statement: com.pcwk.ehr.user.deleteAll
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.user.deleteAll - ==>  Preparing: DELETE FROM member
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.user.deleteAll - ==> Parameters: 
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.user.deleteAll - <==    Updates: 502
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.cmn.PLog - 2.flag: 502
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.user.saveAll - ==>  Preparing: INSERT INTO member SELECT 'jamesol' || level AS user_id, '이상무' || level AS name, '4321_' || level AS password, MOD(level,10) AS login, MOD(level,2) AS recommend, DECODE( MOD(level,3),0,3,MOD(level,3)) AS grade, 'jamesol@paran.com9' AS email, SYSDATE - level AS reg_dt FROM dual CONNECT BY LEVEL <=502
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.user.saveAll - ==> Parameters: 
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.user.saveAll - <==    Updates: 502
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.cmn.PLog - 1.flag:502
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - count:502
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.cmn.PLog - 1.searchDTO:SearchDTO [searchDiv=, searchWord=이상무, toString()=DTO [no=0, totalCnt=0, pageSize=10, pageNo=1]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.user.doRetrieve - ==>  Preparing: SELECT A.*,B.* FROM ( SELECT tt3.RNUM AS no, tt3.user_id, tt3.name, tt3.password, tt3.login, tt3.recommend, DECODE(tt3.grade,1,'BASIC', 2,'SILVER',3,'GOLD','Unknown value') AS grade, tt3.email, TO_CHAR(tt3.reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt FROM ( SELECT ROWNUM as RNUM, tt2.* FROM( SELECT t1.* FROM member t1 ORDER BY t1.reg_dt DESC )tt2 WHERE ROWNUM <= ( ? * (? - 1 ) + ? ) )tt3 WHERE RNUM >= ( ? * (? - 1 ) + 1 ) )A CROSS JOIN ( SELECT COUNT(*) AS total_cnt FROM member )B
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.user.doRetrieve - ==> Parameters: 10(Integer), 1(Integer), 10(Integer), 10(Integer), 1(Integer)
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.user.doRetrieve - <==      Total: 10
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol1, name=이상무1, password=4321_1, regDt=2025/06/23 16:04:55, login=1, recommend=1, grade=BASIC, email=jamesol@paran.com9, toString()=DTO [no=1, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol2, name=이상무2, password=4321_2, regDt=2025/06/22 16:04:55, login=2, recommend=0, grade=SILVER, email=jamesol@paran.com9, toString()=DTO [no=2, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol3, name=이상무3, password=4321_3, regDt=2025/06/21 16:04:55, login=3, recommend=1, grade=GOLD, email=jamesol@paran.com9, toString()=DTO [no=3, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol4, name=이상무4, password=4321_4, regDt=2025/06/20 16:04:55, login=4, recommend=0, grade=BASIC, email=jamesol@paran.com9, toString()=DTO [no=4, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol5, name=이상무5, password=4321_5, regDt=2025/06/19 16:04:55, login=5, recommend=1, grade=SILVER, email=jamesol@paran.com9, toString()=DTO [no=5, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol6, name=이상무6, password=4321_6, regDt=2025/06/18 16:04:55, login=6, recommend=0, grade=GOLD, email=jamesol@paran.com9, toString()=DTO [no=6, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol7, name=이상무7, password=4321_7, regDt=2025/06/17 16:04:55, login=7, recommend=1, grade=BASIC, email=jamesol@paran.com9, toString()=DTO [no=7, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol8, name=이상무8, password=4321_8, regDt=2025/06/16 16:04:55, login=8, recommend=0, grade=SILVER, email=jamesol@paran.com9, toString()=DTO [no=8, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol9, name=이상무9, password=4321_9, regDt=2025/06/15 16:04:55, login=9, recommend=1, grade=GOLD, email=jamesol@paran.com9, toString()=DTO [no=9, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol10, name=이상무10, password=4321_10, regDt=2025/06/14 16:04:55, login=0, recommend=0, grade=BASIC, email=jamesol@paran.com9, toString()=DTO [no=10, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - ***************************
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - @After
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - ***************************
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@6f19ac19, started on Tue Jun 24 16:04:53 GMT+09:00 2025
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - org.springframework.context.support.GenericApplicationContext@6f19ac19, started on Tue Jun 24 16:04:53 GMT+09:00 2025
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - com.pcwk.ehr.user.dao.UserDaoImpl@7d979d34
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - ***************************
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - @After
+[2025-06-24 16:04:55] [DEBUG] com.pcwk.ehr.UserDaoTest - ***************************
+[2025-06-24 16:06:26] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[2025-06-24 16:06:26] [INFO ] org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6304101a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5170bcf4, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@2812b107, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@df6620a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e31276e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1a72a540, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@27d5a580, org.springframework.test.context.event.EventPublishingTestExecutionListener@198d6542]
+[2025-06-24 16:06:27] [DEBUG] com.pcwk.ehr.cmn.PLog - ┌─────────────────────────────────────────────────────────┐
+[2025-06-24 16:06:27] [DEBUG] com.pcwk.ehr.cmn.PLog - │ UserController()                                        │
+[2025-06-24 16:06:27] [DEBUG] com.pcwk.ehr.cmn.PLog - └─────────────────────────────────────────────────────────┘
+[2025-06-24 16:06:27] [DEBUG] com.pcwk.ehr.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@6f19ac19, started on Tue Jun 24 16:06:27 GMT+09:00 2025
+[2025-06-24 16:06:27] [DEBUG] com.pcwk.ehr.cmn.PLog - 1.statement: com.pcwk.ehr.user.deleteAll
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.user.deleteAll - ==>  Preparing: DELETE FROM member
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.user.deleteAll - ==> Parameters: 
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.user.deleteAll - <==    Updates: 502
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.cmn.PLog - 2.flag: 502
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.user.saveAll - ==>  Preparing: INSERT INTO member SELECT 'jamesol' || level AS user_id, '이상무' || level AS name, '4321_' || level AS password, MOD(level,10) AS login, MOD(level,2) AS recommend, DECODE( MOD(level,3),0,3,MOD(level,3)) AS grade, 'jamesol@paran.com9' AS email, SYSDATE - level AS reg_dt FROM dual CONNECT BY LEVEL <=502
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.user.saveAll - ==> Parameters: 
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.user.saveAll - <==    Updates: 502
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.cmn.PLog - 1.flag:502
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - count:502
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.cmn.PLog - 1.searchDTO:SearchDTO [searchDiv=, searchWord=이상무, toString()=DTO [no=0, totalCnt=0, pageSize=10, pageNo=1]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.user.doRetrieve - ==>  Preparing: SELECT A.*,B.* FROM ( SELECT tt3.RNUM AS no, tt3.user_id, tt3.name, tt3.password, tt3.login, tt3.recommend, DECODE(tt3.grade,1,'BASIC', 2,'SILVER',3,'GOLD','Unknown value') AS grade, tt3.email, TO_CHAR(tt3.reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt FROM ( SELECT ROWNUM as RNUM, tt2.* FROM( SELECT t1.* FROM member t1 ORDER BY t1.reg_dt DESC )tt2 WHERE ROWNUM <= ( ? * (? - 1 ) + ? ) )tt3 WHERE RNUM >= ( ? * (? - 1 ) + 1 ) )A CROSS JOIN ( SELECT COUNT(*) AS total_cnt FROM member )B
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.user.doRetrieve - ==> Parameters: 10(Integer), 1(Integer), 10(Integer), 10(Integer), 1(Integer)
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.user.doRetrieve - <==      Total: 10
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol1, name=이상무1, password=4321_1, regDt=2025/06/23 16:06:28, login=1, recommend=1, grade=BASIC, email=jamesol@paran.com9, toString()=DTO [no=1, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol2, name=이상무2, password=4321_2, regDt=2025/06/22 16:06:28, login=2, recommend=0, grade=SILVER, email=jamesol@paran.com9, toString()=DTO [no=2, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol3, name=이상무3, password=4321_3, regDt=2025/06/21 16:06:28, login=3, recommend=1, grade=GOLD, email=jamesol@paran.com9, toString()=DTO [no=3, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol4, name=이상무4, password=4321_4, regDt=2025/06/20 16:06:28, login=4, recommend=0, grade=BASIC, email=jamesol@paran.com9, toString()=DTO [no=4, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol5, name=이상무5, password=4321_5, regDt=2025/06/19 16:06:28, login=5, recommend=1, grade=SILVER, email=jamesol@paran.com9, toString()=DTO [no=5, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol6, name=이상무6, password=4321_6, regDt=2025/06/18 16:06:28, login=6, recommend=0, grade=GOLD, email=jamesol@paran.com9, toString()=DTO [no=6, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol7, name=이상무7, password=4321_7, regDt=2025/06/17 16:06:28, login=7, recommend=1, grade=BASIC, email=jamesol@paran.com9, toString()=DTO [no=7, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol8, name=이상무8, password=4321_8, regDt=2025/06/16 16:06:28, login=8, recommend=0, grade=SILVER, email=jamesol@paran.com9, toString()=DTO [no=8, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol9, name=이상무9, password=4321_9, regDt=2025/06/15 16:06:28, login=9, recommend=1, grade=GOLD, email=jamesol@paran.com9, toString()=DTO [no=9, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - UserDTO [userId=jamesol10, name=이상무10, password=4321_10, regDt=2025/06/14 16:06:28, login=0, recommend=0, grade=BASIC, email=jamesol@paran.com9, toString()=DTO [no=10, totalCnt=502, pageSize=0, pageNo=0]]
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - ***************************
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - @After
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - ***************************
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - context:org.springframework.context.support.GenericApplicationContext@6f19ac19, started on Tue Jun 24 16:06:27 GMT+09:00 2025
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - org.springframework.context.support.GenericApplicationContext@6f19ac19, started on Tue Jun 24 16:06:27 GMT+09:00 2025
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - com.pcwk.ehr.user.dao.UserDaoImpl@7d979d34
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - ***************************
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - @After
+[2025-06-24 16:06:28] [DEBUG] com.pcwk.ehr.UserDaoTest - ***************************
