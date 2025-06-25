@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pcwk.ehr.mapper.UserMapper">
+   
+   <sql id="userWhere">
+        <where>
+          <if test="searchDiv !='' ">
+              <choose>
+                 <when test=" searchDiv == '10'  ">
+                    user_id LIKE #{searchWord} ||'%'
+                 </when>
+                 <when test=" searchDiv == '20'  ">
+                    name LIKE #{searchWord} ||'%'
+                 </when>  
+                 <when test=" searchDiv == '30'  ">
+                    email LIKE #{searchWord} ||'%'
+                 </when>                                                            
+              </choose>
+          
+          </if>
+        </where>
+   </sql>
+   
+   
+   <select id="doRetrieve" parameterType="SearchDTO" resultType="UserDTO"  >
+              
+     SELECT A.*,B.*                                                        
+	   FROM (                                                              
+	     SELECT tt3.RNUM AS no,                                            
+	            tt3.user_id,                                               
+	            tt3.name,                                                  
+	            tt3.password,                                              
+	            tt3.login,                                                 
+	            tt3.recommend,    
+	            DECODE(tt3.grade,1,'BASIC', 2,'SILVER',3,'GOLD','Unknown value') AS grade,	                                                             
+	            tt3.email,                                                 
+	            TO_CHAR(tt3.reg_dt,'YYYY/MM/DD HH24:MI:SS') AS reg_dt 
+	     FROM (                                                            
+	         SELECT ROWNUM as RNUM,                                        
+	                tt2.*                                                  
+	           FROM(                                                       
+	                 SELECT t1.*                                           
+	                  FROM member t1
+                      <include refid="userWhere"></include>          
+	                 ORDER BY t1.reg_dt DESC                               
+	         )tt2
+	     <![CDATA[                                                          
+	         WHERE ROWNUM <= ( #{pageSize} * (#{pageNo} - 1 ) + #{pageSize} )                                             
+	     )tt3                                                              
+	     WHERE RNUM >= ( #{pageSize} * (#{pageNo} - 1 ) + 1 )
+	     ]]>                                                       
+	 )A                                                                    
+	 CROSS JOIN                                                            
+	 (                                                                     
+	   SELECT COUNT(*) AS total_cnt                                        
+	     FROM member         
+         <include refid="userWhere"></include>                                                 
+	 )B                                                                    
+         
+   </select>
+
+   <insert id="saveAll">
+         INSERT INTO member                                        
+		 SELECT 'jamesol' || level AS user_id,                     
+		        '이상무'    || level AS name,                          
+		        '4321_'   || level AS password,                    
+		        MOD(level,10)      AS login,                       
+		        MOD(level,2)       AS recommend,                   
+		        DECODE( MOD(level,3),0,3,MOD(level,3)) AS grade,   
+		        'jamesol@paran.com9' AS email,                     
+		        SYSDATE - level AS reg_dt                          
+		   FROM dual                        
+		 <![CDATA[ CONNECT BY LEVEL <=502  ]]>                                   
+   
+   </insert>
+
+   <update id="doUpdate" parameterType="UserDTO">
+     UPDATE member              
+	 SET  name      = #{name},        
+	      password  = #{password},        
+	      login     = #{login},        
+	      recommend = #{recommend},        
+	      grade     = DECODE( #{grade} ,'BASIC',1
+                                       ,'SILVER',2   
+                                       ,'GOLD',3),         
+	      email     = #{email},              
+	      reg_dt    = SYSDATE   
+	 WHERE                      
+	         user_id = #{userId}           
+   </update>
+
+   <insert id="doSave" parameterType="UserDTO">
+   
+     INSERT INTO member (   
+	     user_id,           
+	     name,              
+	     password,          
+	     login,             
+	     recommend,         
+	     grade,             
+	     email,             
+	     reg_dt             
+	 ) VALUES ( #{userId},          
+	            #{name},          
+	            #{password},          
+	            #{login},          
+	            #{recommend},          
+                DECODE( #{grade} ,'BASIC',1
+                                 ,'SILVER',2   
+                                 ,'GOLD',3),     
+	            #{email},          
+	            SYSDATE )
+   </insert> 
+
+
+   <!-- id PK 또는 고유값에 해당 합니다. -->
+   <resultMap type="UserDTO" id="userMap">
+        <id column="user_id" property="userId"/>
+        <result column="name" property="name"/>
+        <result column="password" property="password"/>
+        <result column="login" property="login"/>
+        <result column="recommend" property="recommend"/>
+        <result column="grade" property="grade"/>
+        <result column="email" property="email"/>
+        <result column="regDt" property="regDt"/>
+   </resultMap>
+
+
+   <select id="getAll" resultType="UserDTO">
+	 SELECT                                                    
+	     user_id,                                              
+	     name,                                                 
+	     password,                                             
+	     login,                                                
+	     recommend,                                            
+	     DECODE(grade,1,'BASIC', 2,'SILVER',3,'GOLD','Unknown value') AS grade,                                            
+	     email,                                                
+	     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS regDt 
+	 FROM                                                      
+	     member                                                
+	 ORDER BY user_id                                             
+   
+   </select> 
+
+   <select id="doSelectOne" parameterType="UserDTO"  resultMap="userMap">   
+		 SELECT                                                    
+		     user_id,                                              
+		     name,                                                 
+		     password,                                             
+		     login,                                                
+		     recommend,                                            
+		     DECODE(grade,1,'BASIC', 2,'SILVER',3,'GOLD','Unknown value') AS grade,                                         
+		     email,                                                
+		     TO_CHAR(reg_dt,'YYYY/MM/DD HH24:MI:SS') AS regDt
+		 FROM                                                      
+		     member                                                
+		 WHERE user_id = #{userId}                                            
+   </select>
+
+
+    <select id="getCount" resultType="java.lang.Integer">
+        SELECT COUNT(*) AS totalCnt FROM member
+    </select>
+
+    <delete id="doDelete" parameterType="UserDTO">
+        DELETE FROM member
+        WHERE user_id = #{userId}
+    </delete>
+    
+    
+    <delete id="deleteAll">
+        DELETE FROM member
+    </delete>
+   
+
+</mapper>
